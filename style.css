@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", sans-serif;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+/* for mobile */
+[class*="col-"] {
+  width: 100%;
+}
+/* Navbar desigine Stard */
+.nav-bar {
+  background-color: #009270;
+  padding: 1% 7%;
+  text-align: center;
+}
+.nav-logo img {
+  height: 150px;
+  width: 200px;
+}
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  padding: 10px;
+}
+.nav-manu {
+  display: flex;
+  flex-direction: column;
+}
+.nav-manu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 20px;
+  margin: 10px;
+}
+.nav-manu a:hover {
+  background-color: #00cc9c;
+  border-radius: 10px;
+}
+.nav-bar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Navbar desigine Stard */
+/* Profile Desigine Start */
+.profile {
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}
+.top-weather-icon img {
+  height: 120px;
+  width: 150px;
+  position: absolute;
+  right: 60px;
+
+  transition: transform 2s, width 2s;
+}
+.top-weather-icon img:hover {
+  transform: rotate(360deg);
+}
+.profile-description h1 {
+  font-family: "Satisfy", cursive;
+  margin-top: 150px;
+  color: black;
+  font-size: 2rem;
+  transition: font-size 2s;
+}
+.profile-description h1:hover {
+  font-size: 2.3rem;
+}
+.profile-description p {
+  margin-top: 10px;
+  padding: 10px;
+  color: #868687;
+}
+.bottom-weather-icon img {
+  margin-top: 10px;
+  height: 120px;
+  width: 150px;
+  position: absolute;
+  left: 60px;
+
+  transition: transform 2s, width 2s;
+}
+.bottom-weather-icon img:hover {
+  transform: rotate(360deg);
+}
+.profile::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Profile Desigine End*/
+
+/* Tutorial Part Start */
+.tutorial {
+  margin-top: 150px;
+  padding: 10px;
+  background-color: #dadada;
+}
+.tutorial::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tutorial-video {
+  padding: 10;
+  transition: transform 1s;
+}
+.tutorial-video:hover {
+  transform: scale(1.05);
+}
+
+/* Tutorial Part End */
+
+/* About  Me Desigine Start*/
+.about-me {
+  background-color: #009270;
+  padding: 1% 7%;
+  text-align: center;
+  color: white;
+}
+.about-me h2 {
+  font-size: 2.5rem;
+  padding: 10px;
+}
+.aboutme-hr {
+  border: dotted 5px white;
+  width: 150px;
+  border-bottom: none;
+  margin: 20px auto;
+}
+.aboutme-image img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.aboutme-describe p {
+  padding: 15px;
+  font-size: 18px;
+}
+.aboutme-button {
+  border: none;
+  background-color: #00cc9c;
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+.aboutme-button:hover {
+  background-color: #42b197;
+}
+
+.about-me::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* About  Me Desigine End*/
+
+/* Profesonal Experience Start */
+.profesonal-experience {
+  padding: 1% 0;
+}
+.card {
+  padding: 20px;
+  background-color: #009270;
+  color: white;
+  height: 700px;
+  border-radius: 10px;
+
+  transition: 0.2s;
+}
+.card:hover {
+  box-shadow: 0 3px 15px 10px #d6d6d6;
+}
+.card-icon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.card-icon img {
+  height: 150px;
+  width: 150px;
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 10px;
+}
+.card-taital {
+  background-color: #00cc9c;
+  padding: 5px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+}
+.card-describe {
+  margin-top: 15px;
+  padding: 20px;
+}
+.card-describe ol li {
+  padding: 10px;
+}
+
+.skill-container {
+  padding-left: 10px;
+}
+.skill-container li {
+  list-style-type: none;
+  margin: 40px 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  left: 0;
+}
+.skill-container li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  height: 20px;
+  border-radius: 1000px;
+
+  background-color: #00cf9f;
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skill-container li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 0;
+  height: 20px;
+  border-radius: 1000px;
+
+  background-color: #004e3c;
+
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+}
+.skill-container li.html::after {
+  animation-name: html;
+}
+@keyframes html {
+  to {
+    width: 90%;
+  }
+}
+
+.skill-container li.css::after {
+  animation-name: css;
+}
+@keyframes css {
+  to {
+    width: 85%;
+  }
+}
+
+.skill-container li.java::after {
+  animation-name: java;
+}
+@keyframes java {
+  to {
+    width: 75%;
+  }
+}
+
+.skill-container li.react::after {
+  animation-name: react;
+}
+@keyframes react {
+  to {
+    width: 80%;
+  }
+}
+
+.skill-container li.node::after {
+  animation-name: node;
+}
+@keyframes node {
+  to {
+    width: 70%;
+  }
+}
+
+.skill-container li.express::after {
+  animation-name: express;
+}
+@keyframes express {
+  to {
+    width: 85%;
+  }
+}
+
+.profesonal-experience::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Profesonal Experience End*/
+
+/* Achivme Contact  Start  */
+.achiveme-contact {
+  padding: 1% 7%;
+  background-color: #009270;
+  color: white;
+}
+
+.contact {
+  text-align: center;
+}
+.contact input,
+textarea {
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 7px;
+  resize: none;
+}
+.contact button {
+  border: none;
+  background-color: #004e3c;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
+  color: white;
+  width: 100px;
+}
+.contact button:hover {
+  background-color: #00cc9c;
+}
+.contact-link {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #00cc9c;
+}
+.achiveme-contact::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Achivme Contact  End */
+
+/* Footer Desigine Start Here */
+.footer {
+  background-color: #004e3c;
+  text-align: center;
+  color: white;
+}
+.footer a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+.footer a:hover {
+  color: #00cf9f;
+  text-decoration: underline;
+}
+
+.footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer Desigine End Here */
